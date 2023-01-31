@@ -1,0 +1,13 @@
+dataset_name: "stackoverflowlr"
+num_clients: null
+num_clients_per_round: 10
+num_samples: 5
+num_iterations: 1500
+optim_max_norm: null
+sample_max_norm: null
+optim_learning_rate: 5.0
+sample_learning_rate: 50.0
+weight_decay: 0.0
+
+finetuning:
+  round_index: 800

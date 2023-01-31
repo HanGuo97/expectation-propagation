@@ -1,0 +1,28 @@
+defaults:
+  - _self_
+  - tasks: cifar100
+  - override hydra/launcher: joblib
+
+hydra:
+  job:
+    env_set:
+      XLA_PYTHON_CLIENT_PREALLOCATE: "false"
+
+gpus: ???
+seed: 111
+gtype: "diagonal"
+sampler_name: "mcmc"
+algorithm_name: "sep"
+base_file_name: null
+which_experiment: "ep"
+
+moment:
+  method: "identity"
+  scale: 1.0
+  shrinkage: 0.0
+  num_epochs: 2
+  num_samples: 5
+  clip_ratio: 2.0
+  mu_learning_rate: 0.0
+  Lambda_decay_rate: 1.0
+  initial_Lambda_scale: 0.0

@@ -1,0 +1,13 @@
+dataset_name: "emnist62"
+num_clients: null
+num_clients_per_round: 100
+num_samples: 20
+num_iterations: 500
+optim_max_norm: null
+sample_max_norm: null
+optim_learning_rate: 0.5
+sample_learning_rate: 0.01
+weight_decay: 0.0
+
+finetuning:
+  round_index: 200
